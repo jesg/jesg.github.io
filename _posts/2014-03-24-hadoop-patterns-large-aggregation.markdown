@@ -9,7 +9,7 @@ Often an alogrithm needs to aggregate values.  Counting how many times a word oc
 
 Often the output from the mapper is huge. Let us say that each document has 1,000 words then we have 1,000 key value pairs for each document.  In some cases the hadoop cluster may not have enough memory the shuffle and  sort the values.
 
-Hadoop provides a built in solution called a combiner function.  A combiner functions input is the mappers output and forms the input for the reducer.  The combiner is an optimization that will be run an arbitrary number of times.
+[Hadoop][hadoop] provides a built in solution called a combiner function.  A combiner functions input is the mappers output and forms the input for the reducer.  The combiner is an optimization that will be run an arbitrary number of times.
 
 Another solution is to aggregate the values in the mapper.
 
@@ -60,7 +60,8 @@ class WordCountMapper extends Mapper<LongWritable, Text, Text, IntWritable> {
 }
 {% endhighlight %}
 
-In this solution the aggregate values for the word count are stored in *partialResults*.  For very large *partialResults* we can flush *partialResults* after the map exceeds a specified size.
+In this solution the aggregate values for the word count are stored in `partialResults`.  For very large `partialResults` we can flush `partialResults` after the map exceeds a specified size.
 
 Code for this example is in the word-count module in [hadoop-patterns](https://github.com/jesg/hadoop-patterns).
 
+[hadoop]: https://hadoop.apache.org/

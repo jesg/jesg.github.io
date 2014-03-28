@@ -5,9 +5,9 @@ date:   2014-03-26 12:00:00
 categories: hadoop avro
 ---
 
-[Avro](https://avro.apache.org/) is a data serialization system.  Avro can be used to create compact, fast, binary format for hadoop.  Defining data types in avro is significantly easier than implementing the Writable interface in hadoop.
+[Avro][avro] is a data serialization system.  Avro can be used to create compact, fast, binary format for hadoop.  Defining data types in avro is significantly easier than implementing the Writable interface in hadoop.
 
-Avro defines data with schemas that are defined in json.  In this example we will define a Person with a Address in java and generate java classes with avro's maven plugin.
+[Avro][avro] defines data with schemas that are defined in json.  In this example we will define a Person with a Address in java and generate java classes with avro's maven plugin.
 
 
 {% highlight json %}
@@ -37,7 +37,7 @@ Avro defines data with schemas that are defined in json.  In this example we wil
 }
 {% endhighlight %}
 
-This datatype will sort order will be by name, state, and then city.  We will configure the pom so the source files will be generated in the generate-sources phase.
+This datatype will sort order will be by name, state, and then city.  We will configure the pom so the source files will be generated in the `generate-sources` phase.
 {% highlight xml %}
 ...
   <properties>
@@ -97,7 +97,7 @@ encoder.flush();
 out.close();
 {% endhighlight %}
 
-Next we deserialize a person stored from a file.
+Next we deserialize a person.
 
 {% highlight java %}
 DatumReader<Person> reader = new SpecificDatumReader<Person>(Person.class);
@@ -108,4 +108,6 @@ System.out.println("Identity: " + (result == person) + " Equality: " + result.eq
 {% endhighlight %}
 
 Code for this example is in [intro-avro](https://github.com/jesg/intro-avro).
+
+[avro]: https://avro.apache.org/
 
