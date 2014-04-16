@@ -14,7 +14,7 @@ On `Arch Linux`
 $ pacman -S conky
 {% endhighlight %}
 
-For more information on installing Conky refer to the [documentation](http://conky.sourceforge.net/documentation.htmll) page.
+For more information on installing Conky refer to the [documentation](http://conky.sourceforge.net/documentation.html) page.
 
 Configure i3
 ------------
