@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Selenium Alerts and Popups"
+title:  "Selenium Alerts"
 date:   2014-04-21 12:00:00
 categories: java
 ---
