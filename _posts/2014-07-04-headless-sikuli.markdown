@@ -73,7 +73,7 @@ Run Script on VNC
 Now we can run our script in vnc. Change the display to match the display you
 saw when you ran `vncserver`.
 {% highlight text %}
-$ xterm -display :1 -e jruby sikuli-example.rb
+$ DISPLAY=:1 jruby sikuli-example.rb
 {% endhighlight %}
 
 The script should take a picture of google's home page after sikuli types in
