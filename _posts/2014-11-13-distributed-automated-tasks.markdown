@@ -108,6 +108,6 @@ And here are some places that I don't think [simpleworker](https://github.com/je
 is a good fit.
 
 * web based integration testing
-* fast test suite that can does not take much memory or network
+* fast test suite that does not take much memory or network
 * anything that starts up a database or web application in the test
 * windows (feel free to submit a patch for windows support)
