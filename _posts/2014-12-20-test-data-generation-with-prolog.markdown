@@ -75,6 +75,6 @@ It may not be cost effective to model the entire application.  In these
 cases a simplified model can take care of the bulk of the cases.
 
 While Prolog is a great language for solving constraint satisfation problems
-not many programmers are familiar with it.  In paticular unification and
+not many programmers are familiar with it.  In particular unification and
 recursion are foreign concepts to programmers who program in imperative
 languages.
