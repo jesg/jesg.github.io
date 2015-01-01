@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Retrospective Automation in 2014"
-date:   2015-01-20 12:00:00
+date:   2015-01-01 12:00:00
 ---
 
 Here are my random thoughts on automation for 2014.
