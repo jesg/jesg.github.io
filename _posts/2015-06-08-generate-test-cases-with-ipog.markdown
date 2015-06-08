@@ -13,7 +13,7 @@ One solution to this problem is [pairwise](http://www.pairwise.org/) testing.
 In pairwise testing one creates a test suite that covers all combinations of two parameters.
 This allows one to create a small test suite that is effective at finding faults.
 
-Unfortunately, I did not find many open source libraries when I looked into applying this technique to the application I am testing.
+Unfortunately, I did not find many open source libraries when I looked into applying this technique.
 My requirements for a good t-way testing are as follows:
 
 * support t-way testing
